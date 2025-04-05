@@ -4,12 +4,12 @@ let currentAudio = null;
 
 // Create buttons for each sound
 soundFiles.forEach(sound => {
-    const btn = document.createElement('button');
-    btn.className = 'btn';
-    btn.innerText = sound;
-    btn.setAttribute('aria-label', `Play ${sound} sound`);
-    btn.addEventListener('click', () => playSound(sound));
-    buttonsContainer.appendChild(btn);
+  const btn = document.createElement('button');
+  btn.className = 'btn';
+  btn.innerText = sound;
+  btn.setAttribute('aria-label', `Play ${sound} sound`);
+  btn.addEventListener('click', () => playSound(sound));
+  buttonsContainer.appendChild(btn);
 });
 
 // Create Stop button
@@ -21,17 +21,17 @@ stopBtn.addEventListener('click', stopSound);
 buttonsContainer.appendChild(stopBtn);
 
 function playSound(sound) {
-    if (currentAudio) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-    }
-    currentAudio = new Audio(`sounds/${sound}.mp3`);
-    currentAudio.play();
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+  currentAudio = new Audio(`sounds/${sound}.mp3`);
+  currentAudio.play();
 }
 
 function stopSound() {
-    if (currentAudio) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-    }
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
 }
