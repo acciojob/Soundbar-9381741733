@@ -15,7 +15,7 @@ soundFiles.forEach(sound => {
 // Create Stop button
 const stopBtn = document.createElement('button');
 stopBtn.className = 'stop';
-stopBtn.innerText = 'Stop';
+stopBtn.innerText = 'stop';
 stopBtn.setAttribute('aria-label', 'Stop the sound');
 stopBtn.addEventListener('click', stopSound);
 buttonsContainer.appendChild(stopBtn);

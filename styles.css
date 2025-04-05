@@ -9,20 +9,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .btn, .stop {
     background-color: #5d3a9b;
     color: white;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 20px 40px;
+    font-size: 20px;
     font-weight: bold;
-    text-transform: capitalize;
+    text-transform: lowercase;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
 .btn:hover {
